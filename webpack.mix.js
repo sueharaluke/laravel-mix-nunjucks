@@ -20,3 +20,5 @@ mix.njk('tests/src', 'tests/public', {
   // envOptions: {},              // nunjucks environment
   // manageEnv: (compiler) => {}, // hook for managing environment before compliation
 });
+
+mix.postCss('tests/css/style.css', 'tests/public/css')
